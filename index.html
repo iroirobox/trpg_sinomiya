@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>TRPG配信アーカイブ＜コーサカ＞（非公式）</title>
+<style>
+:root{--ink:#1a1a1a;--sub:#8a8a8a;--line:#e8e8e8;--accent:#c8195a;--bg:#fff;
+--serif:"Hiragino Mincho ProN","Yu Mincho","Noto Serif JP","Source Han Serif JP",serif}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--bg);color:var(--ink);font:15px/1.8 -apple-system,"Hiragino Sans","Noto Sans JP","Yu Gothic",sans-serif;padding:env(safe-area-inset-top) 0 env(safe-area-inset-bottom)}
+main{max-width:640px;margin:0 auto;padding:44px 28px 96px;animation:in .5s ease both}
+@keyframes in{from{opacity:0}to{opacity:1}}
+@media (prefers-reduced-motion:reduce){main{animation:none}}
+a{color:inherit;text-decoration:none}
+button{font:inherit;color:inherit;background:none;border:0;padding:0;cursor:pointer}
+:focus-visible{outline:2px solid var(--accent);outline-offset:3px}
+.site{margin:0 0 72px;font-size:11px;color:var(--sub);letter-spacing:.12em;line-height:1.4}
+.site a{display:block;margin-top:6px;font-family:var(--serif);font-size:clamp(14px,4.5vw,17px);font-weight:600;color:var(--ink);letter-spacing:.04em;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.site a::before{content:"";display:inline-block;width:14px;height:2px;background:var(--accent);vertical-align:middle;margin-right:10px}
+input[type=search]{width:100%;font:inherit;font-family:var(--serif);font-size:22px;padding:12px 0 16px;border:0;border-bottom:1px solid var(--line);border-radius:0;background:none;outline:0;-webkit-appearance:none;transition:border-color .2s}
+input[type=search]:focus{border-bottom-color:var(--accent)}
+input::placeholder{color:#c4c4c4;font-size:16px}
+h2{font-size:12px;font-weight:400;color:var(--sub);margin:64px 0 8px;letter-spacing:.1em}
+h1{font-family:var(--serif);font-size:30px;line-height:1.45;font-weight:700;margin:12px 0 0;letter-spacing:.02em}
+.row{display:grid;grid-template-columns:116px 1fr;gap:16px;align-items:start;padding:20px 0;border-bottom:1px solid var(--line);width:100%;text-align:left;transition:padding .2s}
+.row.nt{grid-template-columns:1fr}
+.th{width:116px;aspect-ratio:16/9;object-fit:cover;background:#f2f2f2;display:block}
+.b{display:block;min-width:0}
+.row .d{display:block;font-size:11px;color:var(--sub);font-variant-numeric:tabular-nums;letter-spacing:.04em}
+.row .t{display:block;font-family:var(--serif);font-size:17px;font-weight:600;line-height:1.55}
+.row .m{display:block;font-size:12px;color:var(--sub);margin-top:2px}
+.row:hover,.row:active{padding-left:6px}
+.row:hover .t,.row:active .t{color:var(--accent)}
+.more{display:inline-block;margin:32px 0 0;font-size:13px;letter-spacing:.08em;border-bottom:1px solid var(--ink);padding-bottom:2px}
+.more:hover{color:var(--accent);border-color:var(--accent)}
+.back{font-size:12px;letter-spacing:.08em;color:var(--sub);display:inline-block;margin-bottom:40px}
+.back:hover{color:var(--accent)}
+.kicker{font-size:12px;color:var(--sub);letter-spacing:.08em;margin:0}
+.kicker button{font:inherit;letter-spacing:inherit;color:inherit}
+.kicker button:hover,.kicker button.on{color:var(--accent)}
+.row.nl:hover{padding-left:0}
+.row.nl:hover .t{color:inherit}
+.empty{color:var(--sub);padding:24px 0}
+.watch{display:flex;flex-wrap:wrap;gap:10px;margin:36px 0 56px}
+.watch a{background:var(--accent);color:#fff;padding:13px 26px;font-size:14px;letter-spacing:.06em;border-radius:999px;transition:opacity .2s}
+.watch a:hover,.watch a:active{opacity:.82}
+dl{margin:0}
+.f{display:grid;grid-template-columns:5em 1fr;gap:0 12px;padding:18px 0;border-top:1px solid var(--line)}
+.f dt{font-size:12px;color:var(--sub);padding-top:3px;letter-spacing:.06em}
+.f dd{margin:0;overflow-wrap:anywhere}
+.memo{white-space:pre-wrap;line-height:1.8}
+.lk{border-bottom:1px solid var(--line);transition:color .2s,border-color .2s}
+.lk:hover,.lk:active{color:var(--accent);border-color:var(--accent)}
+.pp{display:block;margin-bottom:12px;line-height:1.6}
+.pp:last-child{margin-bottom:0}
+.pcn{color:var(--sub);font-size:inherit}
+.x{color:var(--accent);margin-right:14px;white-space:nowrap}
+.x:hover{text-decoration:underline}
+details{border-top:1px solid var(--line)}
+details:last-of-type{border-bottom:1px solid var(--line)}
+summary{list-style:none;cursor:pointer;padding:18px 0;display:flex;justify-content:space-between;font-size:14px}
+summary::-webkit-details-marker{display:none}
+summary span{color:var(--sub);font-size:12px;margin-left:auto}
+summary::after{content:"+";color:var(--sub);margin-left:16px;width:1em;text-align:center}
+details[open] summary::after{content:"−";color:var(--accent)}
+.rel{margin:72px 0 8px}
+.note{margin-top:72px;font-size:11px;color:var(--sub);letter-spacing:.04em}
+</style>
+</head>
+<body>
+<main id="app"><p class="empty">読み込み中</p></main>
+<script src="config.js"></script>
+<script>
+/* 設定は config.js にあります（人・サイトごとに違うのはそのファイルだけ） */
+
+/* ===== 仮データ（接続前の表示確認用。実データではない） ===== */
+const SAMPLE = {
+  streams: [
+    {"配信日時":"2020-06-20","シナリオ":"Awaken from a nightare!","システム":"ダブルクロス3rd","GM":"茶越きよか","PL/PC":"歌衣メイカ(歌衣メイカ), 天開司(赤井銀三), コーサカ(ユルミラー・ヴァン・コーサカ)","URL":"前編:https://www.youtube.com/watch?v=SAMPLE1,後編:https://www.youtube.com/watch?v=SAMPLE2","タグ":"ダブルクロスXX","メモ":"サンプル"},
+    {"配信日時":"2020-08-01","シナリオ":"サンプルシナリオB","システム":"ダブルクロス3rd","GM":"茶越きよか","PL/PC":"歌衣メイカ(歌衣メイカ), 天開司(赤井銀三)","URL":"https://www.youtube.com/watch?v=SAMPLE3","タグ":"ダブルクロスXX","メモ":"サンプル"},
+    {"配信日時":"2020-09-12","シナリオ":"サンプルシナリオC","システム":"クトゥルフ神話TRPG","GM":"天開司","PL/PC":"コーサカ(ユルミラー・ヴァン・コーサカ)","URL":"https://www.youtube.com/watch?v=SAMPLE4","タグ":"","メモ":"サンプル"}
+  ],
+  pcs: [
+    {"PC":"赤井銀三","PL":"天開司","継続セッション":"①サンプルシナリオB:https://www.youtube.com/watch?v=SAMPLE3"}
+  ]
+};
+
+/* ===== 取り込み・整形 ===== */
+const norm = s => String(s||"").normalize("NFKC").toLowerCase().trim();
+const esc = s => String(s??"").replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
+const enc = encodeURIComponent;
+
+function parseCast(s){ // "PL名(PC名), ..." → [{pl,pc}]
+  const out=[], re=/([^,、，()（）]+?)\s*[(（]([^)）]*)[)）]/g; let m, rest=String(s||"");
+  while((m=re.exec(rest))) out.push({pl:m[1].trim(),pc:m[2].trim()});
+  if(!out.length) rest.split(/[,、，]/).map(x=>x.trim()).filter(Boolean).forEach(pl=>out.push({pl,pc:""}));
+  return out;
+}
+function parseUrls(s){ // "前編:URL,後編:URL" → [{label,url}]
+  const out=[], re=/(?:([^,，、\s]*?)\s*[:：]\s*)?(https?:\/\/[^\s,，、]+)/g; let m;
+  while((m=re.exec(String(s||"")))) out.push({label:m[1]||"",url:m[2]});
+  return out;
+}
+function parseTags(s){ return String(s||"").split(/[\s,、，]+/).map(t=>t.replace(/^[#＃]/,"")).filter(Boolean); }
+function parseSessions(s){ // "①シナリオ名:URL" 複数（URLなしも可）
+  return String(s||"").split(/\n|(?=[①-⑳])/).map(l=>{
+    const m=l.match(/^\s*[①-⑳\d]*[.．)）]?\s*(.+?)\s*(?:[:：]\s*(https?:\/\/\S+))?\s*$/);
+    return m&&m[1]?{title:m[1].trim(),url:m[2]||""}:null;
+  }).filter(Boolean);
+}
+
+let streams=[], pcs=[], isSample=false;
+function build(raw){
+  streams = raw.streams.map((r,i)=>{
+    const cast=parseCast(r["PL/PC"]);
+    const o={id:0,preview:!!r.__preview,date:String(r["配信日時"]||"").slice(0,10),scenario:r["シナリオ"]||"",system:r["システム"]||"",gm:r["GM"]||"",gms:String(r["GM"]||"").split(/[,，、]/).map(x=>x.trim()).filter(Boolean),
+      cast,urls:parseUrls(r["URL"]),tags:parseTags(r["タグ"]),memo:r["メモ"]||""};
+    o.hay=[[o.scenario,5],[o.system,4],[o.gm,3],[cast.map(c=>c.pl+" "+c.pc).join(" "),2],[o.tags.join(" "),1],[o.memo,.5],[o.date,2]].map(([t,w])=>[norm(t),w]);
+    return o;
+  }).sort((a,b)=>b.date.localeCompare(a.date));
+  streams.forEach((x,i)=>x.id=i); // 並べ替え後に番号を振る（詳細画面の取り違え防止）
+  pcs = (raw.pcs||[]).map(r=>({pc:r["PC"]||"",pl:r["PL"]||"",sessions:parseSessions(r["継続セッション"])}));
+}
+
+/* ===== 検索 ===== */
+function search(q){
+  let words=norm(q).split(/\s+/).filter(Boolean), role=null;
+  const isOwner=(s,k)=>k==="gm"?filters.gm(s)(CONFIG.OWNER):filters.pl(s)(CONFIG.OWNER);
+  // 「GM」「PL」だけの語は、配信者（OWNER）がその役割だった配信に絞り込む
+  words=words.filter(w=>{if(w==="gm"||w==="pl"){role=w;return false}return true});
+  return streams.map(s=>{
+    if(role&&!isOwner(s,role)) return null;
+    let score=0;
+    for(const w of words){
+      const best=Math.max(0,...s.hay.map(([t,wt])=>t.includes(w)?wt:0));
+      if(!best) return null; score+=best;
+    }
+    return {s,score};
+  }).filter(Boolean).sort((a,b)=>b.score-a.score||b.s.date.localeCompare(a.s.date)).map(x=>x.s);
+}
+const filters={
+  scenario:s=>v=>norm(s.scenario)===norm(v), system:s=>v=>norm(s.system)===norm(v),
+  gm:s=>v=>s.gms.some(g=>norm(g)===norm(v)), person:s=>v=>s.gms.some(g=>norm(g)===norm(v))||s.cast.some(c=>norm(c.pl)===norm(v)), pl:s=>v=>s.cast.some(c=>norm(c.pl)===norm(v)),
+  pc:s=>v=>s.cast.some(c=>norm(c.pc)===norm(v))
+};
+const labels={scenario:"シナリオ",system:"システム",gm:"GM",pl:"PL",pc:"PC",person:"GM / PL"};
+const byField=(k,v)=>streams.filter(s=>filters[k](s)(v));
+
+/* ===== 描画 ===== */
+const app=document.getElementById("app");
+const memoHtml=t=>esc(t).replace(/\[([^\]]+)\]\((https?:\/\/[^\s)]+)\)/g,(m,a,u)=>`<a class="lk" href="${u}" target="_blank" rel="noopener">${a}</a>`); // [文字](URL) を文字リンクに
+const link=(k,v)=>v?`<a class="lk" href="#/f/${k}/${enc(v)}">${esc(v)}</a>`:"";
+const ytId=u=>{const m=String(u||"").match(/(?:v=|youtu\.be\/|\/(?:live|shorts|embed)\/)([\w-]{11})/);return m?m[1]:""};
+const thumb=s=>{const id=ytId(s.urls[0]&&s.urls[0].url);return id?`<img class="th" loading="lazy" alt="" src="https://i.ytimg.com/vi/${id}/mqdefault.jpg" onerror="this.parentNode.classList.add('nt');this.remove()">`:""};
+const rowN=(s,note)=>{const t=thumb(s);return `<a class="row${t?"":" nt"}" href="#/s/${s.id}">${t}<span class="b"><span class="d">${esc(s.date)}</span><span class="t">${esc(s.scenario)}</span><span class="m">${esc([s.system,s.gms.join("、")].filter(Boolean).join("　")+(note?"　"+note:""))}</span></span></a>`};
+const row=s=>rowN(s);
+const head=`<p class="site"><span>非公式</span><a href="#/">${esc(CONFIG.SITE_TITLE)}</a></p>`;
+const note=()=>isSample?`<p class="note">表示中は仮データです。Googleスプレッドシートには未接続です。</p>`:"";
+
+const NONE='<p class="empty">見つかりませんでした</p>';
+function home(q=""){
+  const list=q?search(q):streams.slice(0,8);
+  app.innerHTML=head+`<input type="search" id="q" placeholder="シナリオ、システム、GM、PL、PC" value="${esc(q)}" autocomplete="off" enterkeyhint="search">
+  <h2>${q?`${list.length}件`:"最近の配信"}</h2><div id="list">${list.map(row).join("")||NONE}</div>
+  ${!q&&streams.length>8?'<a class="more" href="#/all">すべて見る</a>':""}${note()}`;
+  const input=document.getElementById("q");
+  input.addEventListener("input",()=>{ // 一覧だけ更新し、検索語はアドレスに上書き保存（戻ると検索結果に戻る）
+    const v=input.value, l=v?search(v):streams.slice(0,8);
+    document.querySelector("h2").textContent=v?`${l.length}件`:"最近の配信";
+    document.getElementById("list").innerHTML=l.map(row).join("")||NONE;
+    history.replaceState(history.state,"",v?"#/q/"+enc(v):"#/");
+  });
+}
+function listPage(title,sub,items,extra="",noteFn){ // sub はHTML（呼び出し側でエスケープ）
+  app.innerHTML=head+`<a class="back" href="javascript:history.back()">戻る</a><p class="kicker">${sub}</p><h1>${esc(title)}</h1>${extra}
+  <h2>${items.length}件</h2>${items.map(x=>rowN(x,noteFn&&noteFn(x))).join("")||'<p class="empty">配信がありません</p>'}${note()}`;
+}
+const vid=u=>ytId(u)||norm(u); // 動画IDで比較（URL表記の違いを吸収）
+const byUrl=u=>{ if(!u) return null; const k=vid(u); return streams.find(s=>s.urls.some(x=>vid(x.url)===k))||null; };
+const stRow=x=>{ // 継続セッション行：URLが配信一覧と一致→配信の行、不一致→URLへ、URLなし→表示のみ（シナリオ名では結びつけない）
+  const hit=byUrl(x.url); if(hit) return row(hit);
+  const t=`<span class="b"><span class="t">${esc(x.title)}</span></span>`;
+  return x.url?`<a class="row nt" href="${esc(x.url)}" target="_blank" rel="noopener">${t}</a>`:`<span class="row nt nl">${t}</span>`;
+};
+function filterPage(k,v){
+  if(k==="person") return personPage(v);
+  let extra="";
+  if(k==="pc"){
+    const list=byField("pc",v), ss=pcs.filter(x=>norm(x.pc)===norm(v)).flatMap(x=>x.sessions)
+      .filter(x=>{const h=byUrl(x.url); return !(h&&list.includes(h));});
+    if(ss.length) extra=`<h2>継続セッション</h2>`+ss.map(stRow).join("");
+  }
+  const nf=k==="pl"?x=>x.cast.filter(c=>norm(c.pl)===norm(v)&&c.pc).map(c=>"PC:"+c.pc).join("、"):undefined;
+  listPage(v,esc(labels[k]),byField(k,v),extra,nf);
+}
+function allPage(){ // 新しい順 / 古い順
+  const old=history.state&&history.state.order==="old";
+  const sub=`<button class="rt${old?"":" on"}" data-o="new">新しい順</button> / <button class="rt${old?" on":""}" data-o="old">古い順</button>`;
+  listPage("すべての配信",sub,old?[...streams].reverse():streams);
+  app.querySelectorAll(".rt").forEach(b=>b.addEventListener("click",()=>{
+    history.replaceState({...history.state,order:b.dataset.o},"");
+    const y=scrollY; allPage(); scrollTo(0,y);
+  }));
+}
+function personPage(v){ // 名前の上のグレーの文字 GM / PL を押して絞り込み（再度押すと全表示）
+  const r=roles(v), cur=history.state&&history.state.role, role=r[cur]&&r.gm&&r.pl?cur:null;
+  const btn=(k,t)=>r.gm&&r.pl?`<button class="rt${role===k?" on":""}" data-r="${k}">${t}</button>`:`<span>${t}</span>`;
+  const sub=[r.gm&&btn("gm","GM"),r.pl&&btn("pl","PL")].filter(Boolean).join(" / ");
+  const items=streams.filter(x=>role==="gm"?filters.gm(x)(v):role==="pl"?filters.pl(x)(v):filters.person(x)(v));
+  const nf=x=>role==="gm"?"":x.cast.filter(c=>norm(c.pl)===norm(v)&&c.pc).map(c=>"PC:"+c.pc).join("、");
+  listPage(v,sub,items,"",nf);
+  app.querySelectorAll(".rt").forEach(b=>b.addEventListener("click",()=>{
+    history.replaceState({...history.state,role:role===b.dataset.r?null:b.dataset.r},"");
+    const y=scrollY; personPage(v); scrollTo(0,y);
+  }));
+}
+function roles(name){ // その人がGM/PLを経験しているか
+  return {gm:streams.some(x=>filters.gm(x)(name)), pl:streams.some(x=>filters.pl(x)(name))};
+}
+function person(name,extra=""){ // 名前を押すと人物ページへ
+  return `<span class="pp"><a class="lk" href="#/f/person/${enc(name)}">${esc(name)}</a>${extra}</span>`;
+}
+function pcRel(c,sid){ // PCが登場：配信一覧の同PC + 継続セッション（同じ配信・自身は除く）
+  const own=byField("pc",c.pc), rows=own.filter(x=>x.id!==sid).map(row), seen=new Set(own.map(x=>x.id));
+  pcs.filter(p=>norm(p.pc)===norm(c.pc)&&(!p.pl||norm(p.pl)===norm(c.pl))).flatMap(p=>p.sessions).forEach(x=>{
+    const hit=byUrl(x.url), key=hit?hit.id:(x.url?vid(x.url):norm(x.title));
+    if((hit&&(hit.id===sid||seen.has(hit.id)))||seen.has(key)) return;
+    seen.add(key); if(hit) seen.add(hit.id); rows.push(stRow(x));
+  });
+  return rows;
+}
+function members(s){ return new Set([...s.gms,...s.cast.map(c=>c.pl)].map(norm)); }
+function detail(id){
+  const s=streams[id]; if(!s) return home();
+  const same=(k,v)=>byField(k,v).filter(x=>x.id!==s.id);
+  const sc=same("scenario",s.scenario), scIds=new Set(sc.map(x=>x.id));
+  const me=members(s);
+  const cand=streams.filter(x=>x.id!==s.id&&!scIds.has(x.id)).map(x=>({x,n:[...members(x)].filter(m=>me.has(m)).length}))
+    .sort((a,b)=>b.n-a.n||b.x.date.localeCompare(a.x.date));
+  const near=cand.filter(o=>o.n>=3); // 3人以上は全件、10件に届かなければ2人で補う
+  if(near.length<10) near.push(...cand.filter(o=>o.n===2).slice(0,10-near.length));
+  const rels=[];
+  if(sc.length) rels.push(`<details><summary>同じシナリオ<span>${sc.length}件</span></summary>${sc.map(row).join("")}</details>`);
+  s.cast.filter(c=>c.pc).forEach(c=>{const l=pcRel(c,s.id); if(l.length) rels.push(`<details><summary>${esc(c.pc)}が登場<span>${l.length}件</span></summary>${l.join("")}</details>`);});
+  if(near.length) rels.push(`<details><summary>同卓者が近い配信<span>${near.length}件</span></summary>${near.map(o=>rowN(o.x,"共通"+o.n+"人")).join("")}</details>`);
+  app.innerHTML=head+`<a class="back" href="javascript:history.back()">戻る</a>
+  <p class="kicker">${s.preview?"プレビュー（未公開）　":""}${esc(s.date)}</p><h1>${esc(s.scenario)}</h1>
+  ${ytId(s.urls[0]&&s.urls[0].url)?`<img class="th" style="width:100%;margin-top:28px" alt="" src="https://i.ytimg.com/vi/${ytId(s.urls[0].url)}/hqdefault.jpg" onerror="this.remove()">`:""}
+  <div class="watch">${s.urls.map((u,i)=>`<a href="${esc(u.url)}" target="_blank" rel="noopener">${esc(u.label||(s.urls.length>1?`配信${i+1}`:"YouTubeで見る"))}</a>`).join("")||'<span class="empty">URL未登録</span>'}</div>
+  <dl>
+   <div class="f"><dt>システム</dt><dd>${link("system",s.system)}</dd></div>
+   <div class="f"><dt>GM</dt><dd>${s.gms.map(g=>person(g)).join("")}</dd></div>
+   <div class="f"><dt>参加</dt><dd>${s.cast.map(c=>person(c.pl,c.pc?` <small class="pcn">／ ${link("pc",c.pc)}</small>`:"")).join("")}</dd></div>
+   ${s.tags.length?`<div class="f"><dt>Xタグ</dt><dd>${s.tags.map(t=>`<a class="x" href="https://x.com/search?q=${enc("#"+t)}" target="_blank" rel="noopener">#${esc(t)}</a>`).join("")}</dd></div>`:""}
+   ${s.memo?`<div class="f"><dt>メモ</dt><dd class="memo">${memoHtml(s.memo)}</dd></div>`:""}
+  </dl>
+  ${rels.length?`<h2 class="rel">関連する配信</h2>${rels.join("")}`:""}${note()}`;
+}
+function route(){
+  let hash=location.hash.slice(1); try{hash=decodeURIComponent(hash)}catch(e){}
+  const h=hash.split("/");
+  if(h[1]==="s") detail(+h[2]);
+  else if(h[1]==="f"&&filters[h[2]]) filterPage(h[2],h.slice(3).join("/"));
+  else if(h[1]==="all") allPage();
+  else if(h[1]==="preview"){const x=streams.find(t=>t.preview); x?detail(x.id):home();}
+  else if(h[1]==="q") home(h.slice(2).join("/"));
+  else home();
+  window.scrollTo(0,(history.state&&history.state.y)||0); // 戻ったときに元の位置へ
+}
+history.scrollRestoration="manual";
+let st; addEventListener("scroll",()=>{clearTimeout(st);st=setTimeout(()=>history.replaceState({...history.state,y:scrollY},""),150)},{passive:true});
+
+/* ===== 起動 ===== */
+(async()=>{
+  document.title=CONFIG.SITE_TITLE+"（非公式）";
+  try{
+    if(CONFIG.API_URL){ const r=await fetch(CONFIG.API_URL), j=await r.json();
+      if(location.hash.startsWith("#/preview")){ try{ const x=JSON.parse(localStorage.getItem("trpg_preview")); if(x){x.__preview=1; j.streams.push(x);} }catch(e){} } // 管理画面のプレビュー
+      build(j); }
+    else{ build(SAMPLE); isSample=true; }
+  }catch(e){ app.innerHTML=head+'<p class="empty">データを読み込めませんでした。時間をおいて再読み込みしてください。</p>'; return; }
+  addEventListener("hashchange",route); route();
+})();
+</script>
+</body>
+</html>
